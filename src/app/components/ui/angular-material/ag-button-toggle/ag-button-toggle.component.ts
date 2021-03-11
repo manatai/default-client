@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-ag-button-toggle',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AgButtonToggleComponent implements OnInit {
 
   constructor() { }
+
+  fontStyleControl = new FormControl();
+  fontStyle?: string;
 
   ngOnInit(): void {
   }

@@ -12,4 +12,10 @@ export class AgBadgeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
+
 }
