@@ -6,9 +6,9 @@ This is Angular default-client  , contain Angular UI packages , translate packag
 ## Development packages
 
 ## Angular Translate 
-npm install @ngx-translate/core --save
-npm install @ngx-translate/http-loader --save
+* npm install @ngx-translate/core --save
+* npm install @ngx-translate/http-loader --save
 
 ## Angular Material
-ng add @angular/material
+* ng add @angular/material
 
