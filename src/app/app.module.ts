@@ -26,7 +26,7 @@ import { AgCardComponent } from './components/ui/angular-material/ag-card/ag-car
 import { AgCheckboxComponent } from './components/ui/angular-material/ag-checkbox/ag-checkbox.component';
 import { AgChipsComponent } from './components/ui/angular-material/ag-chips/ag-chips.component';
 import { AgDatepickerComponent } from './components/ui/angular-material/ag-datepicker/ag-datepicker.component';
-import { AgDialogComponent } from './components/ui/angular-material/ag-dialog/ag-dialog.component';
+import { AgDialogComponent, AgDialogBoxComponent} from './components/ui/angular-material/ag-dialog/ag-dialog.component';
 import { AgDividerComponent } from './components/ui/angular-material/ag-divider/ag-divider.component';
 import { AgExpansionPanelComponent } from './components/ui/angular-material/ag-expansion-panel/ag-expansion-panel.component';
 import { AgFormFieldComponent } from './components/ui/angular-material/ag-form-field/ag-form-field.component';
@@ -85,6 +85,7 @@ import { DashboardComponent } from './components/admin/dashboard/dashboard.compo
     AgChipsComponent,
     AgDatepickerComponent,
     AgDialogComponent,
+    AgDialogBoxComponent,
     AgDividerComponent,
     AgExpansionPanelComponent,
     AgFormFieldComponent,
