@@ -8,12 +8,18 @@ import { AppTranslateModule } from './modules/app-translate.module';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+
+
 
 //Angular Material Default Examples
 import { AgLayoutComponent } from './components/ui/angular-material/ag-layout/ag-layout.component';
 import { AgAutocompleteComponent } from './components/ui/angular-material/ag-autocomplete/ag-autocomplete.component';
 import { AgBadgeComponent } from './components/ui/angular-material/ag-badge/ag-badge.component';
-import { AgBottomSheetComponent } from './components/ui/angular-material/ag-bottom-sheet/ag-bottom-sheet.component';
+import { AgBottomSheetComponent, AgBottomSheetExampleSheet } from './components/ui/angular-material/ag-bottom-sheet/ag-bottom-sheet.component';
 import { AgButtonComponent } from './components/ui/angular-material/ag-button/ag-button.component';
 import { AgButtonToggleComponent } from './components/ui/angular-material/ag-button-toggle/ag-button-toggle.component';
 import { AgCardComponent } from './components/ui/angular-material/ag-card/ag-card.component';
@@ -71,6 +77,7 @@ import { DashboardComponent } from './components/admin/dashboard/dashboard.compo
     AgAutocompleteComponent,
     AgBadgeComponent,
     AgBottomSheetComponent,
+    AgBottomSheetExampleSheet,
     AgButtonComponent,
     AgButtonToggleComponent,
     AgCardComponent,
@@ -120,9 +127,17 @@ import { DashboardComponent } from './components/admin/dashboard/dashboard.compo
     AppRoutingModule,
     AppTranslateModule,
     AppAngularMaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatNativeDateModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+  ],
   bootstrap: [AppComponent]
+
+
+
 })
 export class AppModule { }
